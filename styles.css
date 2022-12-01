@@ -49,6 +49,27 @@ cheek {
   margin-top: 2rem;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  justify-items: flex-end;
+}
+c1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 10rem;
+  background-color: #e5e5e5;
+  color: #fff;
+}
+
+c2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 10rem;
+  background-color: #e5e5e5;
+  color: #fff;
+}
+
 /* Link Decoration */
 a {
   color: #2e2e2e;
@@ -71,6 +92,37 @@ a:active {
 }
 
 /* classes */
+.c {
+  margin: 0;
+  padding-top: 7px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 20rem;
+  background-color: #2e2e2b;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: auto;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -19rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 2rem;
+}
+
 .design {
   display: flex;
   flex-direction: row-reverse;
@@ -457,6 +509,10 @@ a:active {
 h1:hover {
   color: rgb(164, 164, 164);
 }
+i:hover {
+  color: rgb(164, 164, 164);
+}
+
 li:hover {
   text-decoration: underline;
 }
@@ -477,6 +533,10 @@ div:hover .middle {
 }
 .grow:hover {
   transform: scale(1.03);
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 /* Selections */
 h1::selection {
